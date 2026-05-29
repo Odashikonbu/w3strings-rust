@@ -1,0 +1,7 @@
+[package]
+name = "w3strings-ng"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+w3strings = { path = ".." }

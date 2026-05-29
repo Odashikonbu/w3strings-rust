@@ -1,0 +1,15 @@
+[package]
+name = "w3strings"
+version = "0.1.5"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A Rust library for encoding and decoding The Witcher 3 w3strings files."
+license = "MIT"
+repository = "https://github.com/your-username/w3strings-rust"
+readme = "README.md"
+keywords = ["witcher3", "w3strings", "localization", "decoder"]
+categories = ["parser-implementations", "encoding"]
+[dependencies]
+csv = "1.3"
+thiserror = "1.0"
+byteorder = "1.5"

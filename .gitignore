@@ -1,0 +1,25 @@
+# Rust build artifacts
+target/
+**/target/
+**/*.rs.bk
+
+# C# build artifacts and user files
+/Csharp-source
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.sln.docstates
+
+# Cargo lock files
+Cargo.lock
+**/Cargo.lock
+
+# Test files and executables (ignore all in test-file except placeholder)
+/test-file/*
+!/test-file/PLACE_W3STRINGS_EXE_AND_W3STRINGS_FILE_FOR_TEST
+
+# OS generated files
+.DS_Store
+Thumbs.db
