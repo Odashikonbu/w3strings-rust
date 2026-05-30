@@ -5,9 +5,12 @@ use std::path::{Path, PathBuf};
 use w3strings::{decode, encode, hash_key};
 
 fn print_usage() {
+    let program_name = std::env::args().next()
+        .and_then(|p| std::path::Path::new(&p).file_name().map(|n| n.to_string_lossy().into_owned()))
+        .unwrap_or_else(|| "w3strings-ng".to_string());
     eprintln!("Usage:");
-    eprintln!("  w3strings-ng.exe encode <CSV_path> <w3strings_path>");
-    eprintln!("  w3strings-ng.exe decode <w3strings_path> <CSV_path>");
+    eprintln!("  {} encode <CSV_path> <w3strings_path>", program_name);
+    eprintln!("  {} decode <w3strings_path> <CSV_path>", program_name);
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
