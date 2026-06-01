@@ -17,7 +17,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-w3strings = "0.1.5"
+w3strings = "0.2.0"
 ```
 
 Or run:
@@ -92,4 +92,4 @@ The CSV files processed by this crate use `|` (pipe) as the separator:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
